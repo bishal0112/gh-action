@@ -1,0 +1,12 @@
+name: Deploy Next App
+on: workflow_dispatch
+jobs:
+  deployment:
+    runs-on: windows-latest
+    steps:
+      - name: Get Code
+        uses: actions/checkout@v3
+      - name: Run Build
+        run: npm run build
+      - name: Deploy Build
+        run: echo "Build Deployed"
