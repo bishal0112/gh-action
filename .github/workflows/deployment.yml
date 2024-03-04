@@ -1,5 +1,5 @@
 name: Deploy Next App
-on: workflow_dispatch
+on: push
 jobs:
   deployment:
     runs-on: windows-latest
